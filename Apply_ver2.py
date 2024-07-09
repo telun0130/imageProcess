@@ -1,7 +1,7 @@
 import base64
 import json
 from socket import socket
-import requests
+# import requests
 import cv2 as cv
 import time
 import numpy
