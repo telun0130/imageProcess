@@ -1,9 +1,12 @@
+import cv2
 import cv2 as cv
-import time
 import numpy
 
 # 距離閾值
 distance_threshold = 12
+center_width = 400
+center_height = 800
+
 def calculate_min_distance(rect1, rect2):
     x1, y1, w1, h1 = rect1
     x2, y2, w2, h2 = rect2
@@ -94,26 +97,12 @@ def preprocess(img):
     crack_num = len(merged_rects)
     return img, crack_num
 def capture_frame():
-    cap = cv.VideoCapture(0)  # 0表示第一個攝影鏡頭
-    if not cap.isOpened():
-        print("Error: Unable to open camera.")
-        return
-    pic_num = 0
-    while pic_num < 10:
-        ret, frame = cap.read()
-        # print(type(frame))
-        if not ret:
-            print("Error: Unable to capture frame.")
-            break
-        frame = preprocess(frame)
-        print('裂縫數：%s' %str(frame[1]))
-        cv.imshow('Frame', frame[0])
-        if cv.waitKey(1) & 0xFF == ord('q'):  # 'q'退出
-            break
-        time.sleep(1 / 30)  # 延遲以匹配禎速
-
-    cap.release()
-    cv.destroyAllWindows()
+    image = cv2.imread("./Data/cutting_5_0.jpg")
+    image = cv2.resize(image, (center_width, center_height))
+    result = preprocess(image)
+    print('裂縫數：%s' % str(result[1]))
+    cv2.imshow('Frame', result[0])
+    cv2.imwrite("./Result/labelResult_cutting5.png", result[0])
 
 
 if __name__ == "__main__":

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6969cfe2-25df-4d05-b0eb-554e89371634" name="Changes" comment="simplified - keep the apply_origin and ver 2&#10;refactor - devide whole program to Camere and detection">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apply_origin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apply_origin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apply_ver2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apply_fft_camera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filter_ver2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720537049241</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="build initial">
+      <created>1723532052505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723532052505</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="simplified - keep the apply_origin and ver 2&#10;refactor - devide whole program to Camere and detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="simplified - keep the apply_origin and ver 2&#10;refactor - devide whole program to Camere and detection" />
+    <MESSAGE value="build initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="build initial" />
   </component>
 </project>
